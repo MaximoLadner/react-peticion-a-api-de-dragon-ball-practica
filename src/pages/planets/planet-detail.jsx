@@ -36,7 +36,7 @@ export default function PlanetDetail() {
                 key={p.id}
                 className="p-3 bg-base-100 rounded-lg shadow-md border border-base-300 hover:bg-base-300 transition-colors"
               >
-                <Link href='/characters'>{p.name}</Link>
+                <Link href={`/characters/${p.id}`}>{p.name}</Link>
               </li>
             ))}
           </ul>

@@ -8,7 +8,7 @@ export default function ListOfPlanets() {
       getAllplanets().then((data) => setPla(data?.items));
     }, []);
     return (
-      <main className="flex flex-wrap justify-center p-8 gap-1.5 w-full">
+      <main className="flex flex-wrap justify-center p-8 gap-1.5 w-full"> 
         {pla.map((pl) => (
           <CardPlanets key={pl.id} {...pl} />
         ))}
